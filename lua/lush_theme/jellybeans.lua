@@ -45,8 +45,9 @@
 local lush = require("lush")
 local hsl = lush.hsl
 
+local pink = hs1("#ff007f")
 local foreground = hsl("#e8e8d3")
-local background = hsl("#151515")
+local background = hsl("#000000")
 local grey = hsl("#888888")
 local grey_one = hsl("#1c1c1c")
 local grey_two = hsl("#f0f0f0")
@@ -152,7 +153,7 @@ local theme = lush(function(injected_functions)
 		-- PmenuThumb   { }, -- Popup menu: Thumb of the scrollbar.
 		Question({ fg = mantis }), -- |hit-enter| prompt and yes/no questions
 		QuickFixLine({ bg = bright_grey }), -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-		Search({ fg = wewak, bg = cocoa_brown }), -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
+		Search({ fg = wewak, bg = pink }), -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
 		SpecialKey({ fg = tundora, bg = grey_one }), -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
 		SpellBad({ bg = old_brick }), -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
 		SpellCap({ bg = dark_blue }), -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
