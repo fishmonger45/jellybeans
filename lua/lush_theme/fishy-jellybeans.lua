@@ -1,4 +1,4 @@
---
+
 -- Built with,
 --
 --        ,gggg,
@@ -45,7 +45,7 @@
 local lush = require("lush")
 local hsl = lush.hsl
 
-local pink = hs1("#ff007f")
+local pink = hsl("#ff007f")
 local foreground = hsl("#e8e8d3")
 local background = hsl("#000000")
 local grey = hsl("#888888")
